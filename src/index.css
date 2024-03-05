@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@font-face {
+  font-family: IRANYekan;
+  src: url('./assets/fonts/IranYekan/IRANYekanXVFaNumVF.woff2');
+}
+
+html {
+  @apply scroll-smooth bg-custom-gray font-IRANYekan text-gray-900;
+  font-feature-settings: "kern" on, "liga" on, "calt" on;
+  -moz-font-feature-settings: "kern" on, "liga" on, "calt" on;
+  -webkit-font-feature-settings: "kern" on, "liga" on, "calt" on;
+  -ms-font-feature-settings: "kern" on, "liga" on, "calt" on;
+  -o-font-feature-settings: "kern" on, "liga" on, "calt" on;
+  font-variation-settings: "dots" 4;
+  direction: rtl;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+@layer utilities {
+  .ltr {
+    direction: ltr;
+  }
+
+  .rtl {
+    direction: rtl;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center !important;
+  }
+
+  .flex-center-row {
+    @apply flex items-center justify-center flex-row !important;
+  }
+
+  .scroll-thin::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+
+  .scroll-thin::-webkit-scrollbar-thumb {
+    background: #a3a3a3;
+  }
+
+  .scroll-thin::-webkit-scrollbar-thumb {
+    background: #a3a3a3;
+  }
+
+  .hide-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hide-scroll {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .break-word-force {
+    word-break: break-word;
+  }
+}
+
+.rmdp-ep-arrow {
+  z-index: 10000001 !important;
+}

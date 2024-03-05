@@ -1,0 +1,15 @@
+export const UserFiled = {
+  nationalCode: "nationalCode",
+  birthYear: "birthYear",
+  birthMonth: "birthMonth",
+  birthDay: "birthDay",
+  phoneNumber: "phoneNumber",
+  organizationId: "organizationId",
+  postName: "postName",
+  roles: "roles",
+  phoneNumberConfirmed: "phoneNumberConfirmed",
+  password: "password",
+  status: "status",
+  accountExpirationDate: "accountExpirationDate",
+  twoFactorEnabled: "twoFactorEnabled",
+};

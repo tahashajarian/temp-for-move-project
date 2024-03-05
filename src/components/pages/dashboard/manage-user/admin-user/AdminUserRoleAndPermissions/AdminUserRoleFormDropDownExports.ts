@@ -1,0 +1,1 @@
+export type RoleObjectType = {id:string, name: string}

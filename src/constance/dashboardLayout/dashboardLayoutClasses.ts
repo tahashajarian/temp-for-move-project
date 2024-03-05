@@ -1,0 +1,8 @@
+export const topBarHeight = 'h-[70px]'
+export const sidebarTop = 'top-[70px]'
+export const sidebarHeight = 'h-[calc(100vh-70px)]'
+export const sidebarMainWidth = 'w-[64px]'
+export const sidebarSubWidth = 'w-[200px]'
+export const sidebarSubRight = 'right-[64px]'
+export const contentPadding = 'pt-[70px] pr-[264px]'
+export const contentPaddingWhenSideBarIsClosed = 'pt-[70px] pr-[64px]'
